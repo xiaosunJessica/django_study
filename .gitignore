@@ -1,0 +1,6 @@
+.idea/
+*.pyc
+serverlog/
+venv/
+cache
+test.py

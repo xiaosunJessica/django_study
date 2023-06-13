@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+# 工程预装模块
+# 需要额外的python包，可直接在文件后面添加
+# 请确保指定的包和版本号，可通过pip安装
+
+Django==3.2.4
+gunicorn==19.6.0
+redis-py-cluster==2.1.3
+redis==3.3.11
+pydantic==1.10.2
+PyMySQL~=0.6.7
