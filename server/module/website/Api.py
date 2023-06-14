@@ -13,3 +13,8 @@ class Api(BaseApi):
 
         Service.iter_day_pv(website_id)
         return self.response_json()
+
+    @ArgsFormat(method='POST', login=False)
+    def action_statistics_day_pv(self, start_day: str, end_day: str):
+        result = Service.search_pv_per_day(start_day=start_day, end_day=end_day)
+        return self.response_json(data={'records': result})
